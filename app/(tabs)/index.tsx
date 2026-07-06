@@ -1,13 +1,18 @@
 import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
+import { SafeAreaView  } from "react-native-safe-area-context";
+import "@/global.css"
 
 export default function Index() {
   return (
-   <View className="flex-1 items-center justify-center bg-background">
-      <Text className="text-xl font-bold text-success">
-        Welcome to Nativewind!
+   <SafeAreaView className="flex-1  p-5  bg-background">
+      <Text className="text-7xl font-sans-extrabold text-success">
+     home
+      </Text>
+      <Text className="text-7xl font-bold text-success">
+     home
       </Text>
       <Link href="/subscriptions/spotify">View Subscriptions</Link>
-    </View>
+    </SafeAreaView>
   );
 }
